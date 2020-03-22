@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>D&R</title>
-    <script src="./js/juegos.js"></script>
+    <script src="./js/src/keypress/keypress.js"></script>
+    <script src="./js/game/index.js"></script>
 </head>
-<body>
+<body onload="inicializar()">
     <div>
-        <span>tablero</span>
-    </div>
-    
+        <canvas 
+            id="canvas" 
+            width="500" 
+            height="300" 
+            style="border:2px solid #000000 ">           
+        </canvas>
+    </div>    
 </body>
 </html>

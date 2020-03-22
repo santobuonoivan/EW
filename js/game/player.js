@@ -1,18 +1,22 @@
 export class Player {
     itsAlive;
     isPoisoned;
-    isBurned;        
+    isBurned;
+    positionX;
+    positionY;      
     name;
     race;
     life;
 
-    constructor(name, race, life = 100 ) {
+    constructor(name, race, life = 100, positionX,positionY ) {
         this.name = name;
         this.race = race;
         this.itsAlive = true;
         this.isPoisoned = false;
         this.isBurned = false;
         this.life = life;
+        this.positionX = positionX;
+        this.positionY = positionY;
 
     }        
     get_name(){
